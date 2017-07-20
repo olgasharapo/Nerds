@@ -6,117 +6,181 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="logo">
-      <img src="#" alt="нёрдс" width="" height="">
-    </div>
-    <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li class="main-navigation-item">
-          <a href="#" class="main-navigation-link">Студия</a>
-        </li>
-        <li class="main-navigation-item">
-          <a href="#" class="main-navigation-link">Клиенты</a>
-        </li>
-        <li class="main-navigation-item">
-          <a href="#" class="main-navigation-link">Магазин</a>
-        </li>
-        <li class="main-navigation-item">
-          <a href="#" class="main-navigation-link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="basket">
-      <a href="#" class="basket-link">Корзина</a>
-    </div>
-    <div class="promo">
-      <h1>Магазин готовых шаблонов</h1>
+    <div class="container">
+      <div class="logo">
+        <img src="#" alt="нёрдс" width="" height="">
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Студия</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Клиенты</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Магазин</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="basket">
+        <a class="basket-link" href="#">Корзина</a>
+      </div>
+      <div class="page-title">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
     </div>
   </header>
-  <main class="content">
+  <main class="container">
     <div class="form">
       <form action="#" method="post">
-        <h4 class="form-title">Стоимость:</h4>
+        <fieldset class="form-group">
+          <legend class="group-title">Стоимость:</legend>
           <input class="form-range-input" type="range" name="value" min="0" max="" >
-          <output class="form-range-number" name="result">0</output>
-          <output class="form-range-number" name="result">15000</output>
-        <h4 class="form-title">Сетка:</h4>
+          <input class="form-range-number" type="text" name="result" >0</output>
+          <input class="form-range-number" type="text" name="result" >15000</output>
+        </fieldset>
+        <fieldset class="form-group">
+          <legend class="group-title">Сетка:</legend>
           <label class="form-padio-item">
-            <input type="radio" name="grid" class="form-radio-input" value="adaptive" checked>
+            <input class="form-radio-input" type="radio" name="grid" value="adaptive" checked>
             <span class="form-radio-text">Адаптивная</span>
           </label>
           <label class="form-radio-item">
-            <input type="radio" name="grid" class="form-radio-input" value="fixed">
+            <input class="form-radio-input" type="radio" name="grid" value="fixed">
             <span class="form-radio-text">Фиксированная</span>
           </label>
           <label class="form-radio-item">
-            <input type="radio" name="grid" class="form-radio-input" value="rubber">
+            <input class="form-radio-input" type="radio" name="grid" value="rubber">
             <span class="form-radio-text">Резиновая</span>
           </label>
-        <h4 class="form-title">Особенности:</h4>
+        </fieldset>
+        <fieldset class="form-group">
+          <legend class="group-title">Особенности:</legend>
           <label class="form-checkbox-item">
-            <input type="checkbox" class="form-checkbox-input" checked>
+            <input  class="form-checkbox-input" type="checkbox" value="slider" checked>
             <span class="form-checkbox-text">Слайдер</span>
           </label>
           <label class="form-checkbox-item">
-            <input type="checkbox" class="form-checkbox-input">
+            <input class="form-checkbox-input" type="checkbox" value="advantages">
             <span class="form-checkbox-text">Блок преимуществ</span>
           </label>
           <label class="form-checkbox-item">
-            <input type="checkbox" class="form-checkbox-input" checked>
+            <input class="form-checkbox-input" type="checkbox" value="news" checked>
             <span class="form-checkbox-text">Новости</span>
           </label>
           <label class="form-checkbox-item">
-            <input type="checkbox" class="form-checkbox-input">
+            <input class="form-checkbox-input" type="checkbox" value="gallery">
             <span class="form-checkbox-text">Галерея</span>
           </label>
           <label class="form-checkbox-item">
-            <input type="checkbox" class="form-checkbox-input">
+            <input class="form-checkbox-input" type="checkbox" value="basket">
             <span class="form-checkbox-text">Корзина</span>
           </label>
-        <h4 class="form-title">Сортировать:</h4>
-          <select class="form-select-input" name="sorting" multiple>
-            <option class="form-select-text" selected>по цене</option>
-            <option class="form-select-text">по типу</option>
-            <option class="form-select-text">по названию</option>
-          </select>
-          <button class="btn show">Показать</button>
+        </fieldset>
+        <button class="btn">Показать</button>
       </form>
     </div>
-    <figure class="layouts">
-      <img class="layout-1" src="#" alt="Sedona">
-      <img class="layout-2" src="#" alt="Pink">
-      <img class="layout-3" src="#" alt="Barbershop">
-      <img class="layout-4" src="#" alt="Mishka">
-      <img class="layout-5" src="#" alt="A+">
-      <img class="layout-6" src="#" alt="Kvast">
-    </figure>
-    <div class="paginations">
-      <a class="btn pagination-link" href="#">1</a>
-      <a class="btn pagination-link" href="#">2</a>
-      <a class="btn pagination-link" href="#">3</a>
-      <a class="btn pagination-link next" href="#">Следующая</a>
+    <div class="sorting">
+      <b class="sorting-title">Сортировать:</b>
+      <a class="sorting-link" href="#">по цене</a>
+      <a class="sorting-link" href="#">по типу</a>
+      <a class="sorting-link" href="#">по названию</a>
+    </div>
+    <div class="catalog">
+      <div class="layouts">
+        <article class="layout-card">
+          <div class="layout-card-band"></div>
+          <img class="layuot-card-img" src="#" alt="sedona">
+          <div class="layuot-hover">
+            <h2 class="layout-hover-title">Sedona</h2>
+            <p class="layuot-hover-text">Информационный сайт для туристов</p>
+            <button class="btn price">9900 руб.</button>
+          </div>
+        </article>
+        <article class="layout-card">
+          <div class="layout-card-band"></div>
+          <img class="layuot-card-img" src="#" alt="pink">
+          <div class="layuot-hover">
+            <h2 class="layout-hover-title">Pink App</h2>
+            <p class="layuot-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
+            <button class="btn price">9900 руб.</button>
+          </div>
+        </article>
+        <article class="layout-card">
+          <div class="layout-card-band"></div>
+          <img class="layuot-card-img" src="#" alt="barbershop">
+          <div class="layuot-hover">
+            <h2 class="layout-hover-title">Barbershop</h2>
+            <p class="layuot-hover-text">Сайт салоны красоты.Для мужчин, да.</p>
+            <button class="btn price">9900 руб.</button>
+          </div>
+        </article>
+        <article class="layout-card">
+          <div class="layout-card-band"></div>
+          <img class="layuot-card-img" src="#" alt="mishka">
+          <div class="layuot-hover">
+            <h2 class="layout-hover-title">Mishka</h2>
+            <p class="layuot-hover-text">Интернет-магазин вязаных игрушек</p>
+            <button class="btn price">9900 руб.</button>
+          </div>
+        </article>
+        <article class="layout-card">
+          <div class="layout-card-band"></div>
+          <img class="layuot-card-img" src="#" alt="A+">
+          <div class="layuot-hover">
+            <h2 class="layout-hover-title">A Plus</h2>
+            <p class="layuot-hover-text">Лендинг курсов повышения квалификации</p>
+            <button class="btn price">9900 руб.</button>
+          </div>
+        </article>
+        <article class="layout-card">
+          <div class="layout-card-band"></div>
+          <img class="layuot-card-img" src="#" alt="kvast">
+          <div class="layuot-hover">
+            <h2 class="layout-hover-title">Кваст</h2>
+            <p class="layuot-hover-text">Промо-сайт производителя крафтового кваса</p>
+            <button class="btn price">9900 руб.</button>
+          </div>
+        </article>
+      </div>
+      <div class="paginations">
+        <a class="btn pagination-link" href="#">1</a>
+        <a class="btn pagination-link" href="#">2</a>
+        <a class="btn pagination-link" href="#">3</a>
+        <a class="btn pagination-link next" href="#">Следующая</a>
+      </div>
     </div>
   </main>
+  <section class="address">
+    <div class="address-map">
+      <img src="#" alt="Карта">
+    </div>
+    <div class="addres-contacts">
+      <b>NЁRDS DESIGN STUDIO</b>
+      <p>191186, Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8</p>
+      <p>
+        <a href="tel:+7 (812) 275-75-75">
+          тел. +7 (812) 275-75-75
+        </a>
+      </p>
+      <a class="btn" href="#">Напишите нам</a>
+    </div>
+  </section>
   <footer class="main-footer">
-    <section class="footer-contacts">
-      <div class="map">
-        <img src="#" alt="Карта">
-      </div>
-      <div class="contacts">
-        <b>NЁRDS DESIGN STUDIO</b>
-        191186, Санкт-Петербург, <br>
-        ул. Б. Конюшенная, д. 19/8<br>
-        тел. +7 (812) 275-75-75
-        <a href="#" class="btn">Напишите нам</a>
-      </div>
-    </section>
-    <section class="footer-social">
-      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      <p>Давайте дружить, это выгодно!</p>
-      <span>Скидка 10% для друзей из социальных сетей.</span>
-    </section>
+    <div class="container">
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#"></a>
+        <a class="social-btn social-btn-fb" href="#"></a>
+        <a class="social-btn social-btn-inst" href="#"></a>
+        <p>Давайте дружить, это выгодно!</p>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
