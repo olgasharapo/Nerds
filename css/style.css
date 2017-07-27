@@ -2,38 +2,24 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  font-weight: normal;
-  font-family: "Roboto";
+  font-weight: 400;
+  font-family: "Roboto Regular", "Myriad Pro", sans-serif;
 }
 
-.features .features-name {
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "Roboto";
-}
-
-.descriotion .description-title {
-  font-size: 45px;
-  line-height: 45px;
-  color:#000000;
-  font-weight: normal;
-  font-family: "Roboto";
-}
-
-.page-title .page-title-text {
+h1 {
   font-size: 55px;
   line-height: 55px;
-  color: #000000;
-  font-weight: normal;
-  font-family: "Roboto"
+  font-weight: 600;
+  font-family: "Roboto Medium", "Myriad Pro", sans-serif;
 }
 
-.catalog-item-popap .catalog-item-popap-title {
-  font-size: 18px;
+h2 {
+  font-size: 24px;
   line-height: 30px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "Roboto"
+  font-weight: 700;
+  font-family: "Roboto Bold", "Myriad Pro", sans-serif;
+}
+
+p {
+  color: #283136;
 }
