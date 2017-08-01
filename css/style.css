@@ -61,6 +61,14 @@ p {
   float: left;
 }
 
+.page-tilte {
+  width: 760px;
+  min-height: 65px;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+}
+
 .features {
   width: 1100px;
   min-height: 510px
@@ -73,7 +81,7 @@ p {
 }
 
 .feature-item:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .description {
@@ -102,10 +110,49 @@ p {
   width: 260px;
   float: left;
   margin-right: 120px;
-
 }
 
 .footer-text {
   width: 620px;
   float: left;
+}
+
+.form {
+  width: 260px;
+  min-height: 780px;
+  float: left;
+  margin-top: 60px;
+}
+
+.sorting {
+  width: 760px;
+  min-height: 30px;
+  float: right;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.catalog-content {
+  width: 760px;
+  min-height: 2030px;
+  float: right;
+  margin-bottom: 60px;
+}
+
+.catalog-items {
+  min-height: 1970px;
+  margin-bottom: 60px;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 360px;
+  min-height: 620px;
+  vertical-align: top;
+  margin-bottom: 40px;
+}
+
+.paginations {
+  width: 460px;
+  min-height: 50px;
 }
