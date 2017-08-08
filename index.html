@@ -3,37 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <div class="logo">
-        <img src="img/nerds-logo.png" alt="нёрдс" width="160" height="65">
+      <div class="main-header-bar clearfix">
+        <div class="logo">
+          <img class="logo-img" src="img/nerds-logo.png" alt="нёрдс" width="160" height="65">
+        </div>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Студия</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Клиенты</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Магазин</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="basket">
+          <a class="basket-link" href="#">Корзина</a>
+        </div>
       </div>
-      <nav class="main-navigation">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Студия</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Клиенты</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Магазин</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="basket">
-        <a class="basket-link" href="#">Корзина</a>
-      </div>
-      <div class="slogan">
-        <b class="slogan-title">ДОЛГО,ДОРОГО,СКУРПУЛЁЗНО</b>
-        <p class="slogan-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <a class="btn" href="#">Узнать больше</a>
+      <div class="slider">
+        <div class="slider-controls">
+          <i class="slider-controls-radio active"></i>
+          <i class="slider-controls-radio"></i>
+          <i class="slider-controls-radio"></i>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-description">
+              <b class="slide-description-title">Долго, дорого, скурпулезно.</b>
+              <p class="slide-description-text">Математически выверенный дизайн<br>
+                 для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-description">
+              <b class="slide-description-title">Любим математику как никто другой</b>
+              <p class="slide-description-text">Никакого креатива, только матемитические формулы<br>
+                 для засчета идеальных пропорций.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-description">
+              <b class="slide-description-title">Только ночь, только хордкор</b>
+              <p class="slide-description-text">Работаем днём, как все? Мы против этого.<br>
+                 Ближе к полуночи работа только начинается.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -72,8 +103,8 @@
         </ul>
       </div>
       <div class="addition">
-        <img src="img/nerds-illustration.jpg" alt="нёрдс" width="360" height="208">
-        <table>
+        <img class="addition-img" src="img/nerds-illustration.jpg" alt="нёрдс" width="360" height="208">
+        <table class="addition-table">
           <caption>с 2004 года Любим точность во всем:</caption>
           <tr>
             <th>146%</th>
@@ -91,16 +122,16 @@
     <section class="partners">
       <figure class="partners-logos">
         <a class="partners-link" href="#">
-          <img src="img/logo-1.png" alt="Html academy" width="199" height="68">
+          <img class="partners-link-img" src="img/logo-1.png" alt="Html academy" width="199" height="68">
         </a>
         <a class="partners-link" href="#">
-          <img src="img/logo-2.png" alt="Барбершоп "Бородинский"" width="209" height="90">
+          <img class="partners-link-img" src="img/logo-2.png" alt="Барбершоп "Бородинский"" width="209" height="90">
         </a>
         <a class="partners-link" href="#">
-          <img src="img/logo-3.png" alt="Pink" width="185" height="52">
+          <img class="partners-link-img" src="img/logo-3.png" alt="Pink" width="185" height="52">
         </a>
         <a class="partners-link" href="#">
-          <img src="img/logo-4.png" alt="Mishka"width="173" height="84">
+          <img class="partners-link-img" src="img/logo-4.png" alt="Mishka"width="173" height="84">
         </a>
       </figure>
     </section>
@@ -112,7 +143,7 @@
     <div class="addres-contacts">
       <b class="addres-contacts-title">NЁRDS DESIGN STUDIO</b>
       <p class="addres-contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="addres-contacst-text">
+      <p class="addres-contacts-text-link">
         <a class="addres-contacts-link" href="tel:+7 (812) 275-75-75">
           тел. +7 (812) 275-75-75
         </a>
