@@ -34,10 +34,13 @@
         </div>
       </div>
       <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
-          <i class="slider-controls-radio active"></i>
-          <i class="slider-controls-radio"></i>
-          <i class="slider-controls-radio"></i>
+          <label for="btn-1" class="slider-controls-radio "></label>
+          <label for="btn-2" class="slider-controls-radio"></label>
+          <label for="btn-3" class="slider-controls-radio"></label>
         </div>
         <div class="slides">
           <div class="slide">
@@ -164,5 +167,24 @@
       </section>
     </div>
   </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Напишите нам</h2>
+    <form class="modal-content-form clearfix" action="#" metod="post">
+      <label class="modal-content-form-item">
+        <span class="modal-content-form-text">Ваше имя:</span><br>
+        <input class="modal-content-form-input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label class="modal-content-form-item">
+        <span class="modal-content-form-text">Ваш e-mail:</span><br>
+        <input class="modal-content-form-input" type="email" name="email" placeholder="Для отправки ответа">
+      </label>
+      <label class="modal-content-form-item">
+        <span class="modal-content-form-text">Текст письма:</span><br>
+        <textarea class="modal-content-form-input modal-content-form-textarea" name="text" rows="7">В свободной форме</textarea>
+      </label>
+      <button class="btn modal-content-form-btn" type="button" title="Отправить">Отправить</button>
+    </form>
+  </div>
 </body>
 </html>
