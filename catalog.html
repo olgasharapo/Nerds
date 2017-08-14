@@ -10,22 +10,24 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header-bar clearfix">
-        <div class="logo">
-          <img src="img/nerds-logo.png" alt="нёрдс" width="160" height="65">
+        <div class="logo logo-catalog">
+          <a class="logo-catalog-link" href="index.html">
+            <img class="logo-img" src="img/nerds-logo.png" alt="нёрдс" width="160" height="65">
+          </a>
         </div>
-        <nav class="main-navigation main-navigation-catalog">
+        <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="www.site.ru">Студия</a>
+              <a class="main-navigation-link" href="index.html">Студия</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="www.site.ru">Клиенты</a>
+              <a class="main-navigation-link" href="#">Клиенты</a>
             </li>
             <li class="main-navigation-item active">
               <a class="main-navigation-link">Магазин</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="www.site.ru">Контакты</a>
+              <a class="main-navigation-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -39,7 +41,7 @@
     </div>
   </header>
   <main class="container clearfix">
-    <div class="container-form">
+    <div class="form-catalog">
       <form action="#" method="post">
         <fieldset class="form-group">
           <legend class="group-title">Стоимость:</legend>
@@ -52,48 +54,48 @@
               <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <label class="min-price">от<input name="min-price" type="text" value="0">
+              <label class="price-controls-field min-price">от<input class="price-controls-input" name="min-price" type="text" value="0">
               </label>
-              <label class="max-price">до<input name="max-price" type="text" value="15000">
+              <label class="price-controls-field max-price">до<input class="price-controls-input" name="max-price" type="text" value="15000">
               </label>
             </div>
           </div>
         </fieldset>
         <fieldset class="form-group">
           <legend class="group-title">Сетка:</legend>
-          <label class="form-radio-item">
-            <input class="form-radio-input" type="radio" name="grid" value="adaptive" checked>
+          <input class="form-radio-input" type="radio" name="grid" value="adaptive" id="radio-1" checked>
+          <label class="form-radio-item" for="radio-1">
             <span class="form-radio-text">Адаптивная</span>
           </label>
-          <label class="form-radio-item">
-            <input class="form-radio-input" type="radio" name="grid" value="fixed">
+          <input class="form-radio-input" type="radio" name="grid" value="fixed" id="radio-2">
+          <label class="form-radio-item" for="radio-2">
             <span class="form-radio-text">Фиксированная</span>
           </label>
-          <label class="form-radio-item">
-            <input class="form-radio-input" type="radio" name="grid" value="rubber">
+          <input class="form-radio-input" type="radio" name="grid" value="rubber" id="radio-3">
+          <label class="form-radio-item" for="radio-3">
             <span class="form-radio-text">Резиновая</span>
           </label>
         </fieldset>
         <fieldset class="form-group">
           <legend class="group-title">Особенности:</legend>
-          <label class="form-checkbox-item">
-            <input  class="form-checkbox-input" type="checkbox" value="slider" checked>
+          <input  class="form-checkbox-input" type="checkbox" value="slider" id="checkbox-1" checked>
+          <label class="form-checkbox-item" for="checkbox-1">
             <span class="form-checkbox-text">Слайдер</span>
           </label>
-          <label class="form-checkbox-item">
-            <input class="form-checkbox-input" type="checkbox" value="advantages">
+          <input class="form-checkbox-input" type="checkbox" value="advantages" id="checkbox-2">
+          <label class="form-checkbox-item" for="checkbox-2">
             <span class="form-checkbox-text">Блок преимуществ</span>
           </label>
-          <label class="form-checkbox-item">
-            <input class="form-checkbox-input" type="checkbox" value="news" checked>
+          <input class="form-checkbox-input" type="checkbox" value="news" id="checkbox-3" checked>
+          <label class="form-checkbox-item" for="checkbox-3">
             <span class="form-checkbox-text">Новости</span>
           </label>
-          <label class="form-checkbox-item">
-            <input class="form-checkbox-input" type="checkbox" value="gallery">
+          <input class="form-checkbox-input" type="checkbox" value="gallery" id="checkbox-4">
+          <label class="form-checkbox-item" for="checkbox-4">
             <span class="form-checkbox-text">Галерея</span>
           </label>
-          <label class="form-checkbox-item">
-            <input class="form-checkbox-input" type="checkbox" value="basket">
+          <input class="form-checkbox-input" type="checkbox" value="basket" id="checkbox-5">
+          <label class="form-checkbox-item" for="checkbox-5">
             <span class="form-checkbox-text">Корзина</span>
           </label>
         </fieldset>
@@ -102,9 +104,11 @@
     </div>
     <div class="sorting">
       <b class="sorting-title">Сортировать:</b>
-      <a class="sorting-link" href="#">по цене</a>
+      <a class="sorting-link active" href="#">по цене</a>
       <a class="sorting-link" href="#">по типу</a>
       <a class="sorting-link" href="#">по названию</a>
+      <a class="sorting-arrow done active"></a>
+      <a class="sorting-arrow app"></a>
     </div>
     <div class="catalog-content">
       <div class="catalog-items">
@@ -164,7 +168,7 @@
         </article>
       </div>
       <div class="paginations">
-        <a class="btn pagination-link" href="#">1</a>
+        <a class="btn pagination-link active" href="#">1</a>
         <a class="btn pagination-link" href="#">2</a>
         <a class="btn pagination-link" href="#">3</a>
         <a class="btn pagination-link next" href="#">Следующая</a>
