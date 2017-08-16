@@ -54,48 +54,48 @@
               <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <label class="price-controls-field min-price">от<input class="price-controls-input" name="min-price" type="text" value="0">
+              <label class="price-controls-field min-price">от<input class="price-controls-input" name="min-price" type="number" value="0">
               </label>
-              <label class="price-controls-field max-price">до<input class="price-controls-input" name="max-price" type="text" value="15000">
+              <label class="price-controls-field max-price">до<input class="price-controls-input" name="max-price" type="number" value="15000">
               </label>
             </div>
           </div>
         </fieldset>
         <fieldset class="form-group">
           <legend class="group-title">Сетка:</legend>
-          <input class="form-radio-input" type="radio" name="grid" value="adaptive" id="radio-1" checked>
-          <label class="form-radio-item" for="radio-1">
+          <label class="form-radio-item">
+            <input class="form-radio-input" type="radio" name="grid" value="adaptive" checked>
             <span class="form-radio-text">Адаптивная</span>
           </label>
-          <input class="form-radio-input" type="radio" name="grid" value="fixed" id="radio-2">
-          <label class="form-radio-item" for="radio-2">
+          <label class="form-radio-item">
+            <input class="form-radio-input" type="radio" name="grid" value="fixed">
             <span class="form-radio-text">Фиксированная</span>
           </label>
-          <input class="form-radio-input" type="radio" name="grid" value="rubber" id="radio-3">
-          <label class="form-radio-item" for="radio-3">
+          <label class="form-radio-item">
+            <input class="form-radio-input" type="radio" name="grid" value="rubber">
             <span class="form-radio-text">Резиновая</span>
           </label>
         </fieldset>
         <fieldset class="form-group">
           <legend class="group-title">Особенности:</legend>
-          <input  class="form-checkbox-input" type="checkbox" value="slider" id="checkbox-1" checked>
-          <label class="form-checkbox-item" for="checkbox-1">
+          <label class="form-checkbox-item">
+            <input  class="form-checkbox-input" type="checkbox" value="slider" checked>
             <span class="form-checkbox-text">Слайдер</span>
           </label>
-          <input class="form-checkbox-input" type="checkbox" value="advantages" id="checkbox-2">
-          <label class="form-checkbox-item" for="checkbox-2">
+          <label class="form-checkbox-item">
+            <input class="form-checkbox-input" type="checkbox" value="advantages">
             <span class="form-checkbox-text">Блок преимуществ</span>
           </label>
-          <input class="form-checkbox-input" type="checkbox" value="news" id="checkbox-3" checked>
-          <label class="form-checkbox-item" for="checkbox-3">
+          <label class="form-checkbox-item">
+            <input class="form-checkbox-input" type="checkbox" value="news" checked>
             <span class="form-checkbox-text">Новости</span>
           </label>
-          <input class="form-checkbox-input" type="checkbox" value="gallery" id="checkbox-4">
-          <label class="form-checkbox-item" for="checkbox-4">
+          <label class="form-checkbox-item">
+            <input class="form-checkbox-input" type="checkbox" value="gallery">
             <span class="form-checkbox-text">Галерея</span>
           </label>
-          <input class="form-checkbox-input" type="checkbox" value="basket" id="checkbox-5">
-          <label class="form-checkbox-item" for="checkbox-5">
+          <label class="form-checkbox-item">
+            <input class="form-checkbox-input" type="checkbox" value="basket">
             <span class="form-checkbox-text">Корзина</span>
           </label>
         </fieldset>
@@ -107,7 +107,7 @@
       <a class="sorting-link active" href="#">по цене</a>
       <a class="sorting-link" href="#">по типу</a>
       <a class="sorting-link" href="#">по названию</a>
-      <a class="sorting-arrow done active"></a>
+      <a class="sorting-arrow down active"></a>
       <a class="sorting-arrow app"></a>
     </div>
     <div class="catalog-content">
@@ -177,7 +177,7 @@
   </main>
   <section class="address">
     <div class="address-map">
-      <img src="img/map.jpg" alt="Карта" width="1349" height="416">
+      <img class="map-img" src="img/map.jpg" alt="Карта" width="1200" height="416">
     </div>
     <div class="addres-contacts">
       <b class="addres-contacts-title">NЁRDS DESIGN STUDIO</b>
