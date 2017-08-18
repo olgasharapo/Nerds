@@ -5,6 +5,7 @@ var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
 var form = popup.querySelector(".form-modal");
 var storage = localStorage.getItem("email");
+var map = document.querySelector(".map-img");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -34,11 +35,4 @@ form.addEventListener("submit", function(event) {
   }
 });
 
-window.addEventListener("kewdown", function(event) {
-  if (event.keyCode === 27) {
-    if (popup.classList.contains("modal-content-show")) {
-      popup.classList.remove("modal-content-show");
-      popup.classList.remove("modal-error");
-    }
-  }
-});
+map.classList.remove("no-js");
