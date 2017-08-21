@@ -953,7 +953,7 @@ a {
   height: 416px;
 }
 
-.address {
+.address-content {
   position: relative;
 }
 
@@ -968,10 +968,9 @@ a {
 
 .addres-contacts {
   position: absolute;
-  top: 50%;
-  right: 180px;
+  top: 50px;
+  right: 100px;
   width: 320px;
-  transform: translateY(-50%);
   background-color: #ffffff;
   padding: 50px 50px;
   padding-right: 58px;
